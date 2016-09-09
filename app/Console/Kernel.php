@@ -29,6 +29,12 @@ class Kernel extends ConsoleKernel
 
         $schedule->command("retrieve-tweets 'Kubo and the Two Strings'")
                  ->everyTenMinutes();
+
+        $schedule->command("retrieve-tweets 'Suicide Squad'")
+                 ->everyTenMinutes();
+
+        $schedule->command("retrieve-tweets 'Finding Dory'")
+                 ->everyTenMinutes();
     }
 
     /**
